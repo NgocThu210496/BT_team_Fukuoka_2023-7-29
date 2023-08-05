@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bai tap 2</title>
+
+</head>
+
+<body>
+
+    <script>
+        //Bài tập tìm số lớn thứ hai trong mảng: Cho một mảng chứa các số nguyên,
+        
+        let arrInt=[];
+        for(let i=1;i<=5;i++){
+            arrInt.push(Number(prompt("Nhap vao so nguyen: ")));
+        }console.log(arrInt);
+
+        // hãy tìm số lớn thứ hai trong mảng và in ra kết quả.
+
+        let max=0;
+        let max2=0;
+        for(let i=1;i<arrInt.length;i++){
+            if(max<arrInt[i]){
+                max2=max;
+                max=arrInt[i];  
+            }else if(max > arrInt[i] && max2 < arrInt[i]){
+                max2=arrInt[i];
+            }
+        } 
+        console.log("Gia tri lon nhat trong mang la: " +max);
+        console.log("Gia tri lon thu hai trong mang la: " +max2);
+    </script>
+</body>
+
+
+</html>

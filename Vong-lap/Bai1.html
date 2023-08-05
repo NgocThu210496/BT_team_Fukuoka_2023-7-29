@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bai tap 1</title>
+
+</head>
+
+<body>
+
+    <script>
+        //Bài tập 1: Tính tổng các số chia hết cho 3 không chia hết cho 5  từ 1 đến n sử dụng vòng lặp while,
+        //với n là một số nguyên dương được nhập từ bàn phím.
+
+        let number = Number(prompt("Nhap so nguyen n: "));
+        let sum = 0;
+        var i = 3;
+        
+        while (i < number) {
+            if (i % 5 != 0) {
+                console.log(i);
+                sum = sum + i;
+            } i += 3;
+        } console.log(number + " co tổng các số chia hết cho 3 không chia hết cho 5 la " + sum);
+    </script>
+</body>
+
+
+</html>
